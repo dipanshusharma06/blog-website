@@ -1,0 +1,8 @@
+<%- include('partials/header.ejs') %>
+<h1>Home</h1>
+<p> <%= para1 %> </p>
+<% for(const x of array) {%>
+    <h1><%= x.title %></h1>
+    <p><%= x.content.substring(0,150)+"..." %> <a href="/posts/<%= x.title %> ">Read more</a></p>
+<% } %>
+<%- include('partials/footer.ejs') %>
